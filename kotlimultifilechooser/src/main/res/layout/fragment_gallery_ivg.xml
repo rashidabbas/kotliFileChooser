@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvItems"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+            android:id="@+id/Iv_bin"
+            android:src="@drawable/bin"
+            android:tint="#FFFFFF"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:visibility="invisible"
+        android:tint="#FFFFFF"
+        android:src="@drawable/camera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
